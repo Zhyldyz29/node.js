@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="css/connect.css" />
+<div id="content">
+  <h1>Films</h1>
+  <% if (user) { %>
+  <h2><%= user.nom %></h2>
+  <% } %>
+  <section>
+    <% films.forEach(function(film){ %>
+    <div class="films">
+      <h1><%= film.titre %></h1>
+      <a href="film/<%= film.id_film %>"
+        ><img width="175px" height="250px" src="images/<%= film.une_affiche %>"
+      /></a>
+      <a href="updatefilm/<%= film.id_film %>"> modifier </a>
+      <a href="deletefilm/<%= film.id_film %>"> supprimer </a>
+    </div>
+    <% }); %>
+  </section>
+</div>

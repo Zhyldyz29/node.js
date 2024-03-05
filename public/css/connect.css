@@ -1,0 +1,270 @@
+body {
+  text-align: center;
+  background-image: url(./font.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins";
+  color: black;
+  object-fit: cover;
+}
+
+header li {
+  color: blue;
+  list-style: none;
+}
+
+header a {
+  color: rgb(76, 0, 255);
+  background-color: white;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  background-color: beige;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+p {
+  text-decoration-color: black;
+  text-align: center;
+  color: black;
+  font-size: 10 rem;
+}
+input {
+  width: 500px;
+  height: 50px;
+  text-align: center;
+  background-color: beige;
+  font-size: 1.2rem;
+}
+select {
+  border: solid black 1px;
+}
+button {
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  background-color: beige;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 8px 12px;
+  position:static; 
+  margin: 10px 20px;
+}
+
+.films {
+  display: flex;
+  box-shadow: 8px 8px 5px #444;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  max-width: 170px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+
+.films h1 {
+  text-transform: uppercase;
+  font-size: medium;
+  min-height: 50px;
+}
+.films a {
+  text-decoration: none;
+  color: rgb(76, 0, 255);
+}
+
+.films img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.films img:hover {
+  width: 200px;
+}
+
+.films:hover {
+  background: rgb(173, 201, 222);
+  background: radial-gradient(
+    circle,
+    rgba(173, 201, 222, 1) 17%,
+    rgba(131, 134, 144, 1) 71%,
+    rgba(125, 126, 139, 1) 90%,
+    rgba(219, 232, 235, 1) 100%
+  );
+}
+.acteurs {
+  display: flex;
+  box-shadow: 8px 8px 5px #444;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 10px;
+  padding: 10px;
+  max-width: 170px;
+  background-color: rgba(110, 118, 187, 0.3);
+  border-radius: 15px;
+}
+
+.acteurs h1 {
+  text-transform: uppercase;
+  font-size: medium;
+  min-height: 50px;
+}
+.acteurs a {
+  text-decoration: none;
+  color: rgb(23, 14, 43);
+}
+
+.acteurs img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.acteurs img:hover {
+  width: 200px;
+}
+
+.acteurs:hover {
+  background: rgb(173, 201, 222);
+  background: radial-gradient(
+    circle,
+    rgba(173, 201, 222, 1) 17%,
+    rgba(131, 134, 144, 1) 71%,
+    rgba(125, 126, 139, 1) 90%,
+    rgba(219, 232, 235, 1) 100%
+  );
+}
+.realisateurs {
+  display: flex;
+  box-shadow: 8px 8px 5px #444;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 10px;
+  padding: 10px;
+  max-width: 170px;
+  background-color: rgba(147, 156, 238, 0.3);
+  border-radius: 15px;
+}
+
+.realisateurs h1 {
+  text-transform: uppercase;
+  font-size: medium;
+  min-height: 50px;
+}
+.realisateurs a {
+  text-decoration: none;
+  color: rgb(76, 0, 255);
+}
+
+.realisateurs img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.realisateurs img:hover {
+  width: 200px;
+}
+
+.realisateurs:hover {
+  background: rgb(173, 201, 222);
+  background: radial-gradient(
+    circle,
+    rgba(173, 201, 222, 1) 17%,
+    rgba(131, 134, 144, 1) 71%,
+    rgba(125, 126, 139, 1) 90%,
+    rgba(219, 232, 235, 1) 100%
+  );
+}
+.acteur {
+  display: flex;
+ box-shadow: 8px 8px 5px #444;
+  align-items: center;
+  margin: 20px 20px;
+  padding: 40px;
+  max-width: 170px;
+  background-color: rgba(147, 156, 238, 0.3);
+  border-radius: 15px;
+}
+
+.acteur h1 {
+  text-transform: uppercase;
+  font-size: medium;
+  min-height: 50px;
+  object-position: 50% 50%;
+}
+.acteur a {
+  text-decoration: none;
+  color: rgb(76, 0, 255);
+  object-position: 50% 50%;
+}
+
+.acteur img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  
+}
+
+.acteur img:hover {
+  width: 200px;
+}
+
+.acteur:hover {
+  background: rgb(173, 201, 222);
+  background: radial-gradient(
+    circle,
+    rgba(173, 201, 222, 1) 17%,
+    rgba(131, 134, 144, 1) 71%,
+    rgba(125, 126, 139, 1) 90%,
+    rgba(219, 232, 235, 1) 100%
+  );
+}
+.film {
+  display: flex;
+  box-shadow: 8px 8px 5px #444;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  max-width: 170px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+
+.film h1 {
+  text-transform: uppercase;
+  font-size: medium;
+  min-height: 50px;
+}
+.film a {
+  text-decoration: none;
+  color: rgb(76, 0, 255);
+}
+
+.film img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+
+.film:hover {
+  background: rgb(173, 201, 222);
+  background: radial-gradient(
+    circle,
+    rgba(173, 201, 222, 1) 17%,
+    rgba(131, 134, 144, 1) 71%,
+    rgba(125, 126, 139, 1) 90%,
+    rgba(219, 232, 235, 1) 100%
+  );
+}
+
+.genres { list-style: none ;}

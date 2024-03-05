@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="css/connect.css" />
+<div id="content">
+  <h1>Acteurs</h1>
+  <section>
+    <% acteurs.forEach(function(acteur){ %>
+    <div class="acteurs">
+      <h1><%= acteur.nom %> <%= acteur.prenom %></h1>
+      <a href="acteur/<%= acteur.id_acteur %>"
+        ><img width="175px" height="250px" src="images/<%= acteur.photo %>"
+      /></a>
+      <a href="updateacteur/<%= acteur.id_acteur %>"> modifier </a>
+      <a href="deleteacteur/<%= acteur.id_acteur %>"> supprimer </a>
+    </div>
+    <% }); %>
+  </section>
+</div>

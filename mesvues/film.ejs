@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="css/connect.css" />
+<h1>Film</h1>
+  <div class="film"></div>
+<section>
+
+    <h1><%= film.titre %></h1>
+    <h1>genre: <%= genre.genre %></h1>
+    <h1>date de sortie: <%= film.date %></h1>
+
+    <a href="film/<%= film.id_film %>"
+      ><img width="175px" height="250px" src="/images/<%= film.une_affiche %>"
+    /></a>
+    <h1>réalisé par :<%= real.nom %>&nbsp;<%= real.prenom %></h1>
+
+    <h1>les acteurs principaux:</h1>
+
+    <div>
+      <% actors.forEach(function(acteur) { %> <%= acteur.nom %>&nbsp; <%=
+      acteur.prenom%>
+      <img width="175px" height="250px" src="/images/<%= acteur.photo %>" />
+      <% }) %>
+    </div>
+  
+</section>
+</div>

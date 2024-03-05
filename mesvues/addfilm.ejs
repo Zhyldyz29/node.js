@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="css/connect.css" />
+<h2>Ajouter un film</h2>
+<form action="addfilm" method="POST">
+  <input type="text" name="titre" placeholder="titre" />
+  <input type="text" name="date_de_sortie" placeholder="date de sortie" />
+  <input type="text" name="une_affiche" placeholder="une affiche" />
+
+  <select name="id_genre">
+    <option>choisir un genre</option>
+
+    <% genres.forEach(function(genre) {%>
+    <option value="<%= genre.id_genre %>"><%= genre.genre %> <% }) %></option>
+  </select>
+
+  <select name="id_realisateur">
+    <option>choisir un realisateur</option>
+    <% realisateurs.forEach(function(realisateur) {%>
+    <option value="<%= realisateur.id_realisateur %>">
+      <%= realisateur.nom %>&nbsp; <%=realisateur.prenom %><% }) %>
+    </option>
+  </select>
+  <input type="submit" value="ajouter" />
+</form>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container"></div>
+    <button>va chercher json</button>
+    <script type="text/javascript">
+      document.getElementsByTagName("button")[0] /
+        addEventListener("click", (e) => {
+          axios
+            .get("http://localhost:8088/monjson/mon")
+            .then(function (response) {
+              console.log(response.data);
+              document.getElementById(
+                "container"
+              ).innerHTML = `<h1>${response.data.nom}</h1>`;
+              `<h1>${response.data.prenom}</h1>`;
+              `<h1>${response.data.age}</h1>`;
+            });
+        });
+    </script>
+  </body>
+</html>

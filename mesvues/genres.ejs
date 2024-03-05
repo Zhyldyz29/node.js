@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="css/connect.css" />
+<div id="content">
+  <h1>Genres</h1>
+  <section>
+    <ul class="genres">
+      <% genres.forEach(function(genre){ %>
+      <li>
+        <h1><%= genre.genre %></h1>
+        <a href="updategenre/<%= genre.id_genre %>"> modifier </a>
+        <a href="deletegenre/<%= genre.id_genre %>"> supprimer </a>
+      </li>
+      <% }); %>
+    </ul>
+  </section>
+</div>

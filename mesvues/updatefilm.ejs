@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="css/connect.css" />
+<h2>Modifier un film</h2>
+<form action="/updatefilm" method="POST">
+  <input type="hidden" name="id_film" value="<%= film.id_film %>">
+  <input type="text" name="titre" value="<%= film.titre %>"/>
+  <input type="text" name="date" value="<%= film.date_de_sortie %>"/>
+  <input type="text" name="affiche" value="<%= film.une_affiche %>"/>
+
+  <select name="id_genre">
+    <% genres.forEach(function(genre) {%>
+        <option value="<%= genre.id_genre %>" <% if ( genre.id_genre===film.id_genre ) { %> selected <% } %>
+            > <%= genre.genre %>
+        </option>
+        <% }) %>
+          </option>
+  </select>
+
+  <select name="id_realisateur">
+    <% realisateurs.forEach(function(realisateur) {%>
+          <option value="<%= realisateur.id_realisateur %>"<% if ( realisateur.id_realisateur===film.id_realisateur ) { %> selected <% } %>
+            >
+            <%= realisateur.nom %>&nbsp; <%= realisateur.prenom %>
+                <% }) %>
+          </option>
+  </select>
+  <input type="submit" value="ajouter" />
+</form>

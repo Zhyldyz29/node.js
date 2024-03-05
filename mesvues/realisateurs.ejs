@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="css/connect.css" />
+<div id="content">
+  <h1>Realisateurs</h1>
+  <section>
+    <% realisateurs.forEach(function(realisateur){ %>
+    <div class="realisateurs">
+      <h1><%= realisateur.nom %> <%= realisateur.prenom %></h1>
+      <a href="acteur/<%= realisateur.id_realisateur %>"
+        ><img
+          width="175px"
+          height="250px"
+          src="images/<%= realisateur.photo %>"
+      /></a>
+      <a href="updateacteur/<%= realisateur.id_realisateur %>"> modifier </a>
+      <a href="deleteacteur/<%= realisateur.id_realisateur %>"> supprimer </a>
+    </div>
+    <% }); %>
+  </section>
+</div>
